@@ -15,3 +15,26 @@ http://datablue.net/bwbanner/position3.php
 
 -Currently using just the image name in the db, then appending an image path from the config file
 
+-Needs tracking. I'm thinking G.A. is the best way to handle this. 
+	G.A.
+		Advantages
+			Less server load
+			less code
+			single endpoint for all analtics data
+
+		Disadvantages
+			More front end load
+			Reliance on google
+			Bad connections may have problems with showing every g.a. event
+			must put page up as .html
+
+	Custom tracking
+		Advantages
+			Less Front end load
+			More reliable  data capture
+			can display page as image (possible load time savings)
+
+		Disadvantages
+			Captured data must be parsed to pull out bots
+			seperate analytics endpoint
+			more server load

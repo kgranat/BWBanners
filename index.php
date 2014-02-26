@@ -21,7 +21,9 @@
 	<body>
 		<p>Welcome to the Bad Wolf Banner System.</p>
 		<p>You probably shouldn't be here</p>
-
+		<p><a href="position1.php">1</a></p>
+		<p><a href="position2.php">2</a></p>
+		<p><a href="position3.php">3</a></p>
 
 
 	</body>
