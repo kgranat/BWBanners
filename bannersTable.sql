@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: mysql.chronobolt.net
--- Generation Time: Feb 26, 2014 at 04:57 AM
+-- Generation Time: Feb 26, 2014 at 05:28 AM
 -- Server version: 5.1.56
 -- PHP Version: 5.2.17
 
@@ -33,9 +33,13 @@ CREATE TABLE IF NOT EXISTS `banners` (
   `position` int(11) NOT NULL COMMENT '0 = unknown, 1 = first, 2 =second, etc',
   `active` int(255) NOT NULL COMMENT '0 = inactive, 1 = active',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `banners`
 --
 
+INSERT INTO `banners` (`id`, `title`, `image`, `client`, `position`, `active`) VALUES
+(1, 'future', 'future.jpg', 'MomCorp', 1, 1),
+(2, 'moss', 'moss.gif', 'reynholm', 1, 1),
+(3, 'derpy', 'derpy.jpeg', 'ponies?', 1, 1);

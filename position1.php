@@ -5,18 +5,18 @@ include('config.php');
 mysql_connect ($host, $user, $password) ;
 mysql_select_db ($dbname);
 $query = "SELECT * FROM " . $bannerTable .
-	     "WHERE  active = 1 
+	     " WHERE  active = 1 
 	      AND position = 1
 	      ORDER BY RAND()
 	      LIMIT 1";
 $result=mysql_query($query);
 
-while($row = mysql_fetch_array($result)) 
-	{
+$row = mysql_fetch_array($result);
+	
 		$title = stripslashes($row['title']);
 		$image = stripslashes($row['image']);   
 		$client = date("D, d M Y g:i:s", $row['timestamp']);
-	}
+	
 
 
 
@@ -49,7 +49,7 @@ while($row = mysql_fetch_array($result))
 
 	<body>
 
-		<img src="<?php echo $image?>" alt="<?php echo $title . 'by' . $client ?>" />
+		<img src="<?php echo $imgPath.$image?>" alt="<?php echo $title . 'by' . $client ?>" />
 
 
 	</body>
