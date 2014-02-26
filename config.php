@@ -1,6 +1,7 @@
 <?php 
-$dbname="";
-$host="";
-$user="";
-$password="";
+$dbname = "";
+$host = "";
+$user = "";
+$password = "";
+$bannerTable = "banners"
 ?>
