@@ -3,6 +3,7 @@ $dbname = "";
 $host = "";
 $user = "";
 $password = "";
-$bannerTable = "banners"
-$imgPath = "/bwbanner/banners/"
+$bannerTable = "banners";
+$trackerTable = "tracker";
+$imgPath = "/bwbanner/banners/";
 ?>
